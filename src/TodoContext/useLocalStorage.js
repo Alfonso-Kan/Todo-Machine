@@ -38,7 +38,7 @@ function useLocalStorage(itemName, initialValue) {//no se puede poner initial va
                     setError(true);
                 }
         }, 2000); 
-   }, []);
+   }, [initialValue, itemName]);
   
   
     const saveItem = (newItem) => {
